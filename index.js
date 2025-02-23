@@ -5,7 +5,7 @@ import fs from "node:fs";
 
 if (!fs.existsSync("dist")) {
     console.log("No build folder found. Building...");
-    execSync("npm run build");
+    execSync("pnpm run build");
     console.log("Built!");
 }
 
